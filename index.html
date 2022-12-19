@@ -17,11 +17,12 @@
         <!-- LADO DERECHO PARA INGRESAR EL TEXTO Y MANEJAR BOTONES -->
         <section id="sectionToWrite" class="sectionToWrite">
           <form id="formulario" action="">
-
-            <input id="input-texto" class="input-texto" type="text" name="input-texto" placeholder="Ingrese el texto aqui">
-            
-            <label id="label" class="label" for="input-texto">Solo letras minusculas sin acento.</label>
-            
+            <div id="divCampo" class="divCampo">              
+              <input id="input-texto" class="input-texto" type="text" name="input-texto" autocomplete="off" placeholder="Ingrese el texto aqui">
+            </div>
+            <div id="divLabel" class="divLabel">
+              <label id="label" class="label" for="input-texto">Solo letras minusculas sin acento.</label>
+            </div>
             <div id="divBtn" class="divBtn">
               <input class="btn" id="btn-encriptar" type="button" value="Encriptar">
               <input class="btn" id="btn-desencriptar" type="button" value="Desencriptar">
@@ -36,7 +37,7 @@
           
           <h2>Ningún mensaje fue encontrado.</h2>
 
-          <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su mensaje."></textarea>
           <button class="btn"> COPIAR </button>
         </section>
 

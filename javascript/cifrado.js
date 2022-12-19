@@ -18,7 +18,7 @@ function validarTexto(texto) {
     }, 3000); // SI EL TEXTO ESTA VACIO, LE MOSTRAMOS MSJ Y RESET
     return true;
   } else {
-    return false;
+    return false; //SI ESTA TODO OK MANDA UN FALSE
   }
 }
 

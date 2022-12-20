@@ -78,7 +78,7 @@ var textAreaResultado = document.getElementById("textoEncriptado");
 let botonEncriptador = document.getElementById("btn-encriptar");
 
 botonEncriptador.addEventListener ("click", function() {
-  let txtIngresado = textAreaInput.value;
+  let txtIngresado = textAreaInput.value.toLowerCase();
 
   (validarTxt(txtIngresado) == false) ?
   textAreaResultado.value = encriptar(txtIngresado) :
@@ -90,10 +90,10 @@ botonEncriptador.addEventListener ("click", function() {
 let botonDesencriptador = document.getElementById("btn-desencriptar");
 
 botonDesencriptador.addEventListener ("click", function(){
-  let txtIngresado = textAreaInput;
+  let txtIngresado = textAreaInput.value.toLowerCase();
   let txtDesencriptado = desencriptar(txtIngresado);
   textAreaResultado.value = txtDesencriptado;
-
+  
 });
 
 

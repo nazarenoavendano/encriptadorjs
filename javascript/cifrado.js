@@ -73,6 +73,10 @@ function validarTxt(txt) {
 // MANEJO DE LOS BOTONES:
 
 
+  // BOTON ENCRIPTAR:
+
+
+  // BOTON DESENCRIPTAR:
 
 
 

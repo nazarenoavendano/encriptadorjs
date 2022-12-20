@@ -71,12 +71,31 @@ function validarTxt(txt) {
 };
 
 // MANEJO DE LOS BOTONES:
-
+var textAreaInput = document.getElementById("input-texto");
+var textAreaResultado = document.getElementById("textoEncriptado");
 
   // BOTON ENCRIPTAR:
+let botonEncriptador = document.getElementById("btn-encriptar");
+
+botonEncriptador.addEventListener ("click", function() {
+  let txtIngresado = textAreaInput.value;
+
+  (validarTxt(txtIngresado) == false) ?
+  textAreaResultado.value = encriptar(txtIngresado) :
+  textAreaResultado.value = ""
+
+});
 
 
   // BOTON DESENCRIPTAR:
+let botonDesencriptador = document.getElementById("btn-desencriptar");
+
+
+
+
+
+
+
 
 
 

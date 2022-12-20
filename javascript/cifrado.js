@@ -20,7 +20,7 @@ function encriptar(txt) {
     txt = msjEncriptado;
   }
   return msjEncriptado;
-}
+};
 
 function desencriptar(txt) {
   let msjEncriptado = "";
@@ -32,7 +32,7 @@ function desencriptar(txt) {
     txt = msjEncriptado;
   }
   return msjEncriptado;
-}
+};
 
 // VALIDACIÓN DEL TEXTO:
 
@@ -68,7 +68,7 @@ function validarTxt(txt) {
     // SI NO HAY PROBLEMAS RETORNA FALSO
     return false;
   }
-}
+};
 
 // MANEJO DE LOS BOTONES:
 

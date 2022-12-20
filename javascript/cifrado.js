@@ -118,4 +118,15 @@ function revertirCss() {
   document.getElementById("boton-copiar").style = 'display: none';
 }
 
+// AGREGAR FUNCIÓN COPIAR AL BOTON DE COPIAR
+let botonCopiar = getElementById("boton-copiar");
 
+botonCopiar.addEventListener("click", function(){
+
+  let txtParaCopiar = textAreaResultado.value;
+  txtParaCopiar.select();
+  txtParaCopiar.setSelectionRange(0, 999);
+
+  navigator.clipboard.writeText(txtParaCopiar.value);
+
+});

@@ -89,7 +89,12 @@ botonEncriptador.addEventListener ("click", function() {
   // BOTON DESENCRIPTAR:
 let botonDesencriptador = document.getElementById("btn-desencriptar");
 
+botonDesencriptador.addEventListener ("click", function(){
+  let txtIngresado = textAreaInput;
+  let txtDesencriptado = desencriptar(txtIngresado);
+  textAreaResultado.value = txtDesencriptado;
 
+});
 
 
 

@@ -1,0 +1,139 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: content-box;
+  font-family: sans-serif;
+}
+
+#contenedor {
+  margin: auto;
+  width: 1440px;
+  height: 1024px;
+  background-color: #f3f5fc;
+  border: solid black 1px;
+}
+
+#nav.nav {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  
+}
+
+/* LADO IZQUIERDO */
+#sectionToWrite {
+  height: 1024px;
+  width: 60%;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:space-around;
+  height: 900px;
+}
+
+#divCampo {
+  height: 60%;
+}
+
+#divBtn{
+  height: 10%;
+}
+
+.input-texto {
+  width: 600px;
+  height: 300px;
+  color: #0A3871;
+  font-size: 32px;
+  background-color: #f3f5fc;
+  border: none;
+  resize: none;
+  overflow-inline: auto;
+  
+}
+
+.input-texto::placeholder{
+  color: #0A3871;
+}
+
+.input-texto::selection {
+  border: none;
+}
+
+.input-texto:focus {
+  outline: none;
+}
+
+.btn {
+  font-size: 16px;
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  padding: 24px;
+  gap: 8px;
+  border-color: #0A3871;
+  cursor: pointer;
+}
+
+#btn-encriptar {
+  color: #f2f2f2;
+  background-color: #0A3871;
+  
+}
+
+#btn-desencriptar {
+  color: #0A3871 ;
+  background-color: #f2f2f2;
+  
+}
+
+/* LADO DERECHO */
+#sectionToRead{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 900px;
+  border-radius: 35px;
+  background-color: #fff;
+}
+
+.img-muñeco{
+  width: 300px;
+  height: 300px;
+}
+
+.textoEncriptado {
+  margin: 15px;
+  padding: 15px;
+  resize: none;
+  border: none;
+  font-size: 18px;
+}
+
+.textoEncriptado:active {
+  border: none;
+}
+
+.textoEncriptado:focus {
+  outline: none;
+}
+
+
+
+
+
+/* MEDIA QUERYS:
+  EL PROYECTO DICE QUE HAY 3 MODELOS,
+  PARA DESKTOP, TABLET Y CELULAR
+*/

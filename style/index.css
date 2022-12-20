@@ -129,6 +129,9 @@ body {
   outline: none;
 }
 
+#boton-copiar {
+  display: none;
+}
 
 /* MEDIA QUERYS:
   EL PROYECTO DICE QUE HAY 3 MODELOS,

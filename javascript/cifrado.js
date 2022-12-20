@@ -76,6 +76,7 @@ function validarTxt(txt) {
 // MANEJO DE LOS BOTONES:
   // CREO VARIABLES PARA USO DE LAS PROXIMAS 2 FUNCIONES
 var textAreaInput = document.getElementById("input-texto");
+
 var textAreaResultado = document.getElementById("textoEncriptado");
 
   // BOTON ENCRIPTAR:

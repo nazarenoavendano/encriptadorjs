@@ -55,6 +55,7 @@ function validarTxt(txt) {
       campoTxt = "";
     }, 3000);
 
+    revertirCss();
     return true;
   } else if (txt == nada) {
     campoTxt = msjVacio;
@@ -63,9 +64,11 @@ function validarTxt(txt) {
       campoTxt = "";
     }, 3000);
 
+    revertirCss();
     return true;
   } else {
     // SI NO HAY PROBLEMAS RETORNA FALSO
+    ocultarconCss();
     return false;
   }
 };
@@ -80,10 +83,11 @@ let botonEncriptador = document.getElementById("btn-encriptar");
 
 botonEncriptador.addEventListener ("click", function() {
   let txtIngresado = textAreaInput.value.toLowerCase();
-
+  
   (validarTxt(txtIngresado) == false) ?
   textAreaResultado.value = encriptar(txtIngresado) :
   textAreaResultado.value = ""
+  
 
 });
 
@@ -94,14 +98,23 @@ botonDesencriptador.addEventListener ("click", function(){
   let txtIngresado = textAreaInput.value.toLowerCase();
   let txtDesencriptado = desencriptar(txtIngresado);
   textAreaResultado.value = txtDesencriptado;
-
+  ocultarconCss();
 });
 
 
 // REEMPLAZAR IMAGEN Y TEXTO DE "NO FUE ENCONTRADO":
 
+function ocultarconCss() {
 
+  document.getElementById("img").style = 'display:none';
+  document.getElementById("tituloDerecho").style = 'display: none';
+  document.getElementById("boton-copiar").style = 'display: block';
+}
 
-
+function revertirCss() {
+  document.getElementById("img").style = 'display:block';
+  document.getElementById("tituloDerecho").style = 'display: block';
+  document.getElementById("boton-copiar").style = 'display: none';
+}
 
 

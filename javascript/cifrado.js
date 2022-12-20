@@ -93,11 +93,11 @@ botonDesencriptador.addEventListener ("click", function(){
   let txtIngresado = textAreaInput.value.toLowerCase();
   let txtDesencriptado = desencriptar(txtIngresado);
   textAreaResultado.value = txtDesencriptado;
-  
+
 });
 
 
-
+// REEMPLAZAR IMAGEN Y TEXTO DE "NO FUE ENCONTRADO":
 
 
 

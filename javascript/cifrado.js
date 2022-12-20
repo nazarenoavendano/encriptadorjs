@@ -119,14 +119,13 @@ function revertirCss() {
 }
 
 // AGREGAR FUNCIÓN COPIAR AL BOTON DE COPIAR
-let botonCopiar = getElementById("boton-copiar");
+function copiar (){
 
-botonCopiar.addEventListener("click", function(){
-
-  let txtParaCopiar = textAreaResultado.value;
+  var txtParaCopiar = document.getElementById("textoEncriptado").value;
   txtParaCopiar.select();
-  txtParaCopiar.setSelectionRange(0, 999);
+  txtParaCopiar.setSelectionRange(0, 99999);
 
-  navigator.clipboard.writeText(txtParaCopiar.value);
+  navigator.clipboard.writeText(txtParaCopiar);
 
-});
+};
+

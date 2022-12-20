@@ -19,3 +19,15 @@ function encriptar(txt) {
   }
   return msjEncriptado;
 }
+
+function desencriptar(txt) {
+  let msjEncriptado = "";
+  let vocales = Object.values(CODIGOARRAY);
+  let palabras = Object.keys(CODIGOARRAY);
+
+  for (let i = 0; i < vocales.length; i++) {
+    msjEncriptado = txt.replaceAll(vocales[i], palabras[i]);
+    txt = msjEncriptado;
+  }
+  return msjEncriptado;
+}

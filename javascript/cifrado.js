@@ -8,6 +8,8 @@ const CODIGOARRAY = {
   u: "ufat",
 };
 
+// ENCRIPTAR Y DESENCRIPTAR: 
+
 function encriptar(txt) {
   let msjEncriptado = "";
   let vocales = Object.values(CODIGOARRAY);
@@ -31,3 +33,18 @@ function desencriptar(txt) {
   }
   return msjEncriptado;
 }
+
+// VALIDACIÓN DEL TEXTO:
+
+
+
+
+
+
+
+
+
+
+
+
+// MANEJO DE LOS BOTONES:

@@ -8,7 +8,7 @@ const CODIGOARRAY = {
   u: "ufat",
 };
 
-// ENCRIPTAR Y DESENCRIPTAR: 
+// ENCRIPTAR Y DESENCRIPTAR:
 
 function encriptar(txt) {
   let msjEncriptado = "";
@@ -36,15 +36,44 @@ function desencriptar(txt) {
 
 // VALIDACIÓN DEL TEXTO:
 
+function validarTxt(txt) {
+  // agrego regex:
+  let caracteres = /[~!@#$%^&*()_+|}{[\]\\\/?><:"`;.,áéíóúàèìòù']/g;
+  // si está vacío:
+  let nada = "";
+  // mensajes de error:
+  let msjVacio = "El campo está vacio, favor de ingresar un texto.";
+  let msjCaracter =
+    "Ingrese solo letras evitando el uso de tildes u otros caracteres especiales.";
+  // donde vamos a mostrar los mensajes de error:
+  let campoTxt = document.getElementById("input-texto").value;
 
+  if (txt.match(caracteres)) {
+    campoTxt = msjCaracter;
 
+    setTimeout(function () {
+      campoTxt = "";
+    }, 3000);
 
+    return true;
+  } else if (txt == nada) {
+    campoTxt = msjVacio;
 
+    setTimeout(function () {
+      campoTxt = "";
+    }, 3000);
 
-
-
-
-
-
+    return true;
+  } else {
+    // SI NO HAY PROBLEMAS RETORNA FALSO
+    return false;
+  }
+}
 
 // MANEJO DE LOS BOTONES:
+
+
+
+
+
+

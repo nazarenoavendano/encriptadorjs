@@ -121,11 +121,11 @@ function revertirCss() {
 // AGREGAR FUNCIÓN COPIAR AL BOTON DE COPIAR
 function copiar (){
 
-  var txtParaCopiar = document.getElementById("textoEncriptado").value;
+  var txtParaCopiar = document.getElementById("textoEncriptado");
   txtParaCopiar.select();
   txtParaCopiar.setSelectionRange(0, 99999);
 
-  navigator.clipboard.writeText(txtParaCopiar);
+  navigator.clipboard.writeText(txtParaCopiar.value);
 
 };
 

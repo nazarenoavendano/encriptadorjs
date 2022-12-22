@@ -1,3 +1,9 @@
+* {
+  resize: none;
+  overflow-inline: auto;
+  border: solid 1px black;
+}
+
 body {
   margin: 0%;
   padding: 0%;
@@ -7,133 +13,133 @@ body {
 
 #contenedor {
   margin: auto;
-  width: 1440px;
-  height: 1024px;
+  height: 100vh;
   background-color: #f3f5fc;
-  border: solid black 1px;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 #nav.nav {
   width: 100%;
-  margin-top: 10px;
-  margin-left: 40px;
+  background-color: lime;
 }
-
 
 #main {
-  display: flex;
   justify-content: center;
-  align-items:flex-start;
-  
+  display: grid;
+  grid-template-columns: 60% 30%;
+  height: 100%;
 }
 
-/* LADO IZQUIERDO */
-#sectionToWrite {
-  height: 1024px;
-  width: 60%;
-}
+            /* LADO IZQUIERDO */
 
-#formulario {
+section#sectionToWrite.sectionToWrite {
+  background-color: lightpink;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content:space-around;
-  height: 900px;
+  align-items: center;
+  justify-content: center;
 }
 
-#divCampo {
-  height: 60%;
+form#formulario.formulario {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 60% 10% ;
 }
 
-#divBtn{
-  height: 10%;
+div#divCampo.divCampo{
+  background-color: palegoldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.input-texto {
-  width: 600px;
-  height: 300px;
+textarea#input-texto.input-texto {
   color: #0A3871;
-  font-size: 32px;
-  background-color: #f3f5fc;
-  border: none;
-  resize: none;
-  overflow-inline: auto;
-  
+  width: 70%;
+  height: 70%;
+  font-size: 1.5em;
 }
 
-.input-texto::placeholder{
-  color: #0A3871;
+div#divLabel.divLabel{
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.input-texto::selection {
-  border: none;
-}
-
-.input-texto:focus {
-  outline: none;
+div#divBtn.divBtn {
+  background-color: lightseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
   font-size: 16px;
-  width: 328px;
-  height: 67px;
+  width: 200px;
+  height: 40px;
   border-radius: 24px;
-  padding: 24px;
-  gap: 8px;
   border-color: #0A3871;
   cursor: pointer;
+  text-align: center;
+  justify-content: center;
 }
 
 #btn-encriptar {
   color: #f2f2f2;
   background-color: #0A3871;
-  
 }
 
 #btn-desencriptar {
   color: #0A3871 ;
   background-color: #f2f2f2;
-  
 }
 
-/* LADO DERECHO */
-#sectionToRead{
+              /* LADO DERECHO */
+
+section#sectionToRead.sectionToRead{
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+div#divImg.divImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  overflow: hidden;
+}
+
+img#img.img-muñeco {
+  width: 300px;
+}
+
+div#divTituloDerecho.divTituloDerecho {
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
-  height: 900px;
-  border-radius: 35px;
-  background-color: #fff;
+  width: 90%;
 }
 
-.img-muñeco{
-  width: 300px;
-  height: 300px;
+h2#tituloDerecho {
+  font-size: 16px;
 }
 
-.textoEncriptado {
-  margin: 15px;
-  padding: 15px;
+div#divTextAreaResultado.divTextAreaResultado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+textarea.textoEncriptado {
   resize: none;
-  border: none;
   font-size: 18px;
 }
-
-.textoEncriptado:active {
-  border: none;
-}
-
-.textoEncriptado:focus {
-  outline: none;
-}
-
-#boton-copiar {
-  display: none;
-}
-
-/* MEDIA QUERYS:
-  EL PROYECTO DICE QUE HAY 3 MODELOS,
-  PARA DESKTOP, TABLET Y CELULAR
-*/

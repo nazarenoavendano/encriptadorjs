@@ -78,7 +78,7 @@ div#divBtn.divBtn {
 
 .btn {
   font-size: 16px;
-  width: 200px;
+  width: 180px;
   height: 40px;
   border-radius: 24px;
   border-color: #0A3871;
@@ -143,3 +143,4 @@ textarea.textoEncriptado {
   resize: none;
   font-size: 18px;
 }
+

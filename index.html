@@ -17,31 +17,43 @@
         <!-- LADO DERECHO PARA INGRESAR EL TEXTO Y MANEJAR BOTONES -->
         <section id="sectionToWrite" class="sectionToWrite">
           <form id="formulario" class="formulario" action="">
+
             <div id="divCampo" class="divCampo">              
               <textarea id="input-texto" class="input-texto" type="text" maxlength="500" name="input-texto" autocomplete="off" placeholder="Ingrese el texto aqui"></textarea>
             </div>
+
             <div id="divLabel" class="divLabel">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
               </svg>
               <label id="label" class="label" for="input-texto">Solo letras sin acento.</label>
             </div>
+
             <div id="divBtn" class="divBtn">
               <input class="btn" id="btn-encriptar" type="button" value="Encriptar">
               <input class="btn" id="btn-desencriptar" type="button" value="Desencriptar">
-            </div>      
+            </div> 
+                 
           </form>
         </section>
         <!-- LADO IZQUIERDO PARA MOSTRAR MENSAJES -->
         <section id="sectionToRead" class="sectionToRead">
           
-          <img id="img" class="img-muñeco" src="./img/Muñeco.png" alt="Hombre con lupa mirando un diamante.">
+          <div id="divImg" class="divImg">
+            <img id="img" class="img-muñeco" src="./img/Muñeco.png" alt="Hombre con lupa mirando un diamante.">
+          </div>
           
-          <h2 id="tituloDerecho">Ningún mensaje fue encontrado.</h2>
+          <div id="divTituloDerecho" class="divTituloDerecho">
+            <h2 id="tituloDerecho">Ningún mensaje fue encontrado.</h2>
+          </div>
 
-          <textarea class="textoEncriptado" name="textoEncriptado" id="textoEncriptado" cols="30" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+          <div id="divTextAreaResultado" class="divTextAreaResultado">
+            <textarea class="textoEncriptado" name="textoEncriptado" id="textoEncriptado" cols="30" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+          </div>
           
-          <button id="boton-copiar" class="btn btn-copy" onclick="copiar()" >Copiar</button>
+          <div id="divBotonDerecho" class="divBotonDerecho">
+            <button id="boton-copiar" class="btn btn-copy" onclick="copiar()" >Copiar</button>
+          </div>
 
         </section>
 

@@ -108,12 +108,13 @@ botonDesencriptador.addEventListener ("click", function(){
 function ocultarconCss() {
 
   document.getElementById("img").src="./img/top-secret.jpg";
+  document.getElementById("tituloDerecho").style.color="#ffffff"
 
 }
 
 function revertirCss() {
   document.getElementById("img").src="./img/Muñeco.png";
-  
+  document.getElementById("tituloDerecho").style.color="#000000"
 }
 
 // AGREGAR FUNCIÓN COPIAR AL BOTON DE COPIAR

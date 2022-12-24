@@ -53,9 +53,17 @@ div#divCampo.divCampo{
 
 textarea#input-texto.input-texto {
   color: #0A3871;
-  width: 70%;
+  width: 100%;
   height: 70%;
   font-size: 1.5em;
+  outline: none;
+  border: none;
+}
+
+textarea#input-texto.input-texto:focus {
+  outline: none;
+  border: none;
+  resize: none;
 }
 
 div#divLabel.divLabel{
@@ -137,6 +145,8 @@ textarea.textoEncriptado {
   resize: none;
   font-size: 18px;
   width: 90%;
+  height: 300px;
+  border: none;
 }
 
 /* MEDIA QUERY PARA RESPONSIVE DESING */

@@ -107,15 +107,13 @@ botonDesencriptador.addEventListener ("click", function(){
 
 function ocultarconCss() {
 
-  // document.getElementById("img").style = 'display:none';
-  // document.getElementById("tituloDerecho").style = 'display: none';
-  // document.getElementById("boton-copiar").style = 'display: block';
+  document.getElementById("img").src="./img/top-secret.jpg";
+
 }
 
 function revertirCss() {
-  // document.getElementById("img").style = 'display:block';
-  // document.getElementById("tituloDerecho").style = 'display: block';
-  // document.getElementById("boton-copiar").style = 'display: none';
+  document.getElementById("img").src="./img/Muñeco.png";
+  
 }
 
 // AGREGAR FUNCIÓN COPIAR AL BOTON DE COPIAR

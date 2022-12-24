@@ -147,7 +147,7 @@ textarea.textoEncriptado {
   resize: none;
   font-size: 18px;
   width: 70%;
-  height: 220px;
+  height: 210px;
   border: none;
 }
 
@@ -157,6 +157,10 @@ textarea.textoEncriptado:focus{
 
 textarea.textoEncriptado::selection{
   outline:none;
+}
+
+#divBotonDerecho{
+  margin-bottom: 10px;
 }
 
 /* MEDIA QUERY PARA RESPONSIVE DESING */

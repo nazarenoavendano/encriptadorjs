@@ -109,6 +109,7 @@ section#sectionToRead.sectionToRead{
   background-color: #fff;
   border-radius: 35px;
   overflow: hidden;
+  height: 85%;
 }
 
 div#divImg.divImg {
